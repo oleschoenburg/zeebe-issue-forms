@@ -1,38 +1,51 @@
 ---
 name: Bug report
-about: Create a report to help us improve
-title: ''
-labels: ''
-assignees: ''
-
+title: 'Bug:'
+labels: 'Type: Bug'
+assignees: []
+body:
+    - type: markdown
+      attributes:
+        value: |
+          Thanks for taking the time to fill out this bug report. This will help us to improve Zeebe.
+    - type: textarea
+      attributes:
+        label: Bug Description
+        description: A clear and concise description of what the bug is.
+      validations:
+        required: true
+    - type: markdown
+      attributes:
+        value: Any additional information that will help us in diagnosing the issue
+    - type: textarea
+      attributes:
+        label: Reproduction Steps
+        description: |
+          Steps to reproduce the behavior.
+          If possible add a minimal reproducer code sample
+            - when using the Java client: https://github.com/zeebe-io/zeebe-test-template-java
+    - type: textarea
+      attributes:
+        label: Expected Behavior
+        description: A clear and concise description of what you expected to happen.
+    - type: textarea
+      attributes:
+        label: Logs
+        description: Log output that is related to the bug.
+    - type: textarea
+      attributes:
+        label: Stacktrace
+        description: Stacktrace that describes the bug.
+    - type: input
+      attributes:
+        label: OS
+        description: e.g. Linux. 
+    - type: input
+      attributes:
+        label: Zeebe Version
+        description: e.g. 1.2.1. 
+    - type: input
+      attributes:
+        label: Configuration
+        description: e.g. exporters etc. 
 ---
-
-**Describe the bug**
-A clear and concise description of what the bug is.
-
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
-
-**Expected behavior**
-A clear and concise description of what you expected to happen.
-
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
-
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
-
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
-
-**Additional context**
-Add any other context about the problem here.
