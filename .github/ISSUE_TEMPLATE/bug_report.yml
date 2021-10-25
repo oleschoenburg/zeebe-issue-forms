@@ -32,10 +32,26 @@ body:
       attributes:
         label: Logs
         description: Log output that is related to the bug.
+        value: |
+            <details><summary>Log</summary>
+
+            ```
+            Paste your logs here
+            ```
+            
+            </details>
     - type: textarea
       attributes:
         label: Stacktrace
         description: Stacktrace that describes the bug.
+        value: |
+            <details><summary>Stacktrace</summary>
+
+            ```
+            Paste the stacktrace here
+            ```
+            
+            </details>
     - type: input
       attributes:
         label: OS
